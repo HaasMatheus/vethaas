@@ -3,8 +3,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-ul {
+h1,
+ul,
+p {
   margin: 0px;
+}
+
+ul {
   padding: 0px;
   list-style: none;
 }
@@ -12,6 +17,12 @@ ul {
 a {
   text-decoration: none;
 }
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
 .header-bg {
   background-color: #ffffff;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 2, 0.2);
@@ -84,4 +95,41 @@ a {
     padding: 8px 12px;
     border-radius: 4px;
   }
+}
+
+.introducao-bg {
+  background: #f4fdf3;
+  position: relative;
+}
+
+.introducao-bg h1 {
+  padding-top: 120px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: #013205;
+  font-family: Poppins;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+}
+
+.introducao-conteudo {
+  align-self: center;
+  padding-bottom: 80px;
+}
+
+.introducao-conteudo P {
+  color: #404040;
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem; /* 133.333% */
 }
