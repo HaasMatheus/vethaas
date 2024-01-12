@@ -35,7 +35,7 @@ img {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 10px 100px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -51,8 +51,12 @@ img {
   display: inline-block;
   padding: 16px 0px;
   color: #000000;
-  font-size: 1.5rem;
   position: relative;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.25rem;
 }
 
 .header-menu a::after {
@@ -103,7 +107,7 @@ img {
 }
 
 .introducao-bg h1 {
-  padding-top: 120px;
+  padding-top: 100px;
   margin-bottom: 60px;
   text-align: center;
   color: #013205;
@@ -118,6 +122,12 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0px 40px;
+  box-sizing: border-box;
+  max-width: 1600px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .introducao-conteudo {
@@ -125,11 +135,36 @@ img {
   padding-bottom: 80px;
 }
 
-.introducao-conteudo P {
+.introducao-conteudo p {
   color: #404040;
   font-family: Poppins;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 500;
   line-height: 1.5rem; /* 133.333% */
+}
+
+.introducao-conteudo a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 12px;
+  background-color: #013205;
+  border-radius: 4px;
+  background: linear-gradient(#00ff29, #07bc16);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+  color: #013205;
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-top: 12px;
+}
+
+.introducao-conteudo a:hover {
+  background: linear-gradient(180deg, #0cf231 0%, #00a50e 100%);
+}
+.introducao-conteudo a img {
+  padding-right: 12px;
 }
