@@ -1,0 +1,25 @@
+.botao {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 12px;
+  background-color: #013205;
+  border-radius: 4px;
+  background: linear-gradient(#00ff29, #07bc16);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+  color: #013205;
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-top: 12px;
+}
+
+.botao img {
+  padding-right: 12px;
+}
+
+.botao:hover {
+  background: linear-gradient(180deg, #0cf231 0%, #00a50e 100%);
+}

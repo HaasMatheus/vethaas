@@ -1,0 +1,108 @@
+.introducao-bg {
+  background: #f4fdf3;
+  position: relative;
+}
+
+.introducao-bg h1 {
+  padding-top: 100px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: #013205;
+  font-family: Poppins;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+.introducao-imagem img {
+  max-width: 100%; /* Ajusta a imagem para não ultrapassar o tamanho da coluna */
+  height: auto; /* Mantém a proporção da imagem ao redimensionar */
+  display: block;
+  margin-bottom: 80px;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+  box-sizing: border-box;
+  max-width: 1600px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introducao img {
+  border-radius: 4px;
+}
+
+.introducao-conteudo {
+  justify-items: center;
+  align-self: center;
+}
+
+@media (max-width: 1500px) {
+  .introducao-conteudo {
+    padding-bottom: 80px;
+  }
+}
+
+.introducao-conteudo p {
+  color: #404040;
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem; /* 133.333% */
+  padding-bottom: 20px;
+}
+
+@media (max-width: 1250px) {
+  .introducao-bg h1 {
+    font-size: 1.5rem;
+  }
+  .introducao-conteudo p {
+    font-size: 1rem;
+    padding-bottom: 8px;
+    line-height: 1.125;
+  }
+  .introducao-conteudo a {
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1rem;
+    margin-top: 12px;
+    padding: 6px 6px;
+  }
+  .introducao-conteudo a img {
+    width: 24px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao-bg h1 {
+    font-size: 2rem;
+  }
+  .introducao-conteudo p {
+    font-size: 1rem;
+    padding-bottom: 8px;
+    line-height: 1.125;
+  }
+  .introducao-conteudo {
+    text-align: center; /* Adiciona alinhamento central ao contêiner de conteúdo */
+  }
+  .introducao-conteudo a {
+    padding: 12px 12px;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-top: 12px;
+    /* Não é mais necessário justify-self: center; */
+  }
+}
