@@ -1,5 +1,5 @@
 .introducao-bg {
-  background: #f4fdf3;
+  background: var(--cor-p8);
   position: relative;
 }
 
@@ -7,12 +7,7 @@
   padding-top: 100px;
   margin-bottom: 60px;
   text-align: center;
-  color: #013205;
-  font-family: Poppins;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 2.5rem;
+  color: var(--cor-p7);
 }
 
 .introducao-imagem img {
@@ -50,12 +45,7 @@
 }
 
 .introducao-conteudo p {
-  color: #404040;
-  font-family: Poppins;
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.5rem; /* 133.333% */
+  color: var(--cor-9);
   padding-bottom: 20px;
 }
 
@@ -67,14 +57,6 @@
     font-size: 1rem;
     padding-bottom: 8px;
     line-height: 1.125;
-  }
-  .introducao-conteudo a {
-    font-size: 0.75rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 1rem;
-    margin-top: 12px;
-    padding: 6px 6px;
   }
   .introducao-conteudo a img {
     width: 24px;
@@ -103,6 +85,5 @@
     font-weight: 600;
     line-height: 1.5rem;
     margin-top: 12px;
-    /* Não é mais necessário justify-self: center; */
   }
 }
