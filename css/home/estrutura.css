@@ -1,0 +1,63 @@
+.estrutura-bg {
+  margin-top: 0px;
+  background: var(--cor-p7);
+  position: relative;
+  padding-bottom: 110px;
+}
+
+.estrutura-bg h2 {
+  padding-top: 100px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: var(--cor-p8);
+}
+
+.estrutura-conteudo {
+  background: var(--cor-p8);
+  width: 85%;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.grupo-cima,
+.grupo-baixo {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.grupo {
+  flex: none; /* Volta ao comportamento padrão para cada grupo */
+  width: 100%; /* Ocupa a largura total da tela em telas menores */
+  margin-bottom: 10px; /* Adicione algum espaço entre os grupos */
+}
+
+.grupo {
+display: flex;
+flex: 1;
+flex-direction: column;
+align-items: center;
+text-align: center;
+padding: 50px;
+box-sizing: border-box;
+}
+
+.grupo img {
+margin-bottom: 12px;
+max-width: 100%;
+}
+
+.grupo p {
+max-width: 300px; /* Ajuste a largura máxima conforme necessário */
+margin: 0 auto; /* Centralizar o parágrafo horizontalmente */
+}
+
+.grupo h3 {
+margin-bottom: 12px;
+}
+
+@media (max-width: 1000px) {
+  .grupo-cima,
+  .grupo-baixo {
+    flex-direction: column; /* Altera para uma coluna em telas menores */
+  }
