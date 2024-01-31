@@ -48,7 +48,7 @@ max-width: 100%;
 }
 
 .grupo p {
-max-width: 300px; /* Ajuste a largura máxima conforme necessário */
+max-width: 300px; 
 margin: 0 auto; /* Centralizar o parágrafo horizontalmente */
 }
 
