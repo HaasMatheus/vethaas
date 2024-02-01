@@ -1,0 +1,96 @@
+.planoVet {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+  box-sizing: border-box;
+  max-width: 1600px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  justify-items: center;
+  align-items: center;
+}
+
+.planoVet h3 {
+  margin-bottom: 20px;
+}
+
+.planoVet-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--cor-p8);
+  width: 600px;
+  height: 360px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 2, 0.2);
+}
+
+.plano-img2 {
+  width: 200px;
+  height: 280px;
+  margin-top: 40px;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+.planoVet-conteudo h4 {
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 2px;
+}
+
+.planoVet-conteudo .vetHaasSVG {
+  position: absolute;
+  margin-top: 282px;
+  margin-left: 20px;
+  width: 170px;
+  height: 32px;
+}
+
+@media only screen and (max-width: 1150px) {
+  .planoVet {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+  .planoVet-conteudo {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .plano-img2 {
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+  }
+
+  .planoVet-conteudo h4 {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .planoVet-conteudo .vetHaasSVG {
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .planoVet-conteudo .vetHaasSVG {
+    display: none;
+  }
+  .planoVet-conteudo {
+    height: 290px;
+    margin-bottom: 60px;
+  }
+  .planoVet h3 {
+    font-size: 1.5rem;
+  }
+
+  .planoVet p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+}

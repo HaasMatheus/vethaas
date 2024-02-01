@@ -17,3 +17,8 @@
 
 /*Serviços*/
 @import "./servicos/servicos.css";
+@import "./servicos/diferenciais.css";
+
+/*PlANO VET*/
+@import "./planoVet/planovet.css";
+@import "./planoVet/opcoes-plano.css";
