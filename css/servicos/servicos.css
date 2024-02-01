@@ -1,0 +1,90 @@
+.servicos-bg {
+  background: var(--cor-p8);
+  position: relative;
+}
+
+.servicos-bg h1 {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.servicos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+.servicos div {
+  background-color: var(--cor-0);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 4px 4px 0px 0px;
+}
+
+@media screen and (max-width: 1300px) {
+  .servicos {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media screen and (min-width: 2550px) {
+  .servicos {
+    gap: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+.servicos div a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 0px 0px 4px 4px;
+  background: linear-gradient(#00ff29, #07bc16);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+  color: var(--cor-p7);
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-top: 12px;
+}
+
+.servicos div img {
+  max-width: 100%;
+  height: auto;
+  padding-top: 20px;
+}
+
+.servicos div h3 {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 1000px) {
+  .servicos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .servicos {
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
