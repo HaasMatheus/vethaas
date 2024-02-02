@@ -1,0 +1,104 @@
+.opcoes-bg {
+  background-color: var(--cor-p6);
+}
+
+.opcoes-bg {
+  text-align: center;
+}
+
+.opcoes-bg div h3,
+.opcoes-bg div p {
+  display: inline-block;
+  margin: 0; /* Remover margens padrão dos elementos */
+}
+
+.opcoes-bg div h3 {
+  padding-top: 120px;
+  padding-bottom: 20px;
+}
+
+.opcoes-bg div span {
+  color: #29f339;
+}
+
+.opcoes-conteudo {
+  margin-top: 90px;
+  display: flex;
+  gap: 40px;
+  padding: 0 100px;
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 120px;
+}
+
+.opcoes-conteudo div {
+  background-color: var(--cor-p8);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.opcoes-conteudo div p {
+  padding-top: 12px;
+  padding-bottom: 40px;
+}
+
+.opcoes-conteudo div p::before {
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  margin-right: 6px;
+  background: linear-gradient(#00ff29, #07bc16);
+}
+
+.opcoes-conteudo div a {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+/* .opcoes-conteudo {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 120px;
+}
+
+.opcoes-conteudo div {
+  margin: 0 40px; 
+  flex: 0 1 calc(33.33% - 80px); 
+  background-color: var(--cor-p8);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: center;
+}
+
+.opcoes-conteudo div h4 {
+  margin-bottom: 12px;
+}
+
+.opcoes-conteudo div p {
+  padding-top: 12px;
+  padding-bottom: 20px;
+}
+
+.opcoes-conteudo div p::before {
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  margin-right: 6px;
+  background: linear-gradient(#00ff29, #07bc16);
+}
+
+.opcoes-conteudo div a {
+  margin-top: auto;
+} */
