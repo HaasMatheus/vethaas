@@ -1,8 +1,5 @@
 .opcoes-bg {
   background-color: var(--cor-p6);
-}
-
-.opcoes-bg {
   text-align: center;
 }
 
@@ -21,31 +18,45 @@
   color: #29f339;
 }
 
-.opcoes-conteudo {
-  margin-top: 90px;
-  display: flex;
+/* .opcoes-bg ul {
   gap: 40px;
   padding: 0 100px;
   max-width: 1800px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 120px;
+  flex-wrap: wrap;
+} */
+
+.opcoes-bg ul {
+  margin-top: 90px;
+  display: flex;
+  gap: 40px; /* Reduzi o gap para melhorar em layouts menores */
+  padding: 0;
+  width: 100%; /* Substituí max-width por width */
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap; /* Permite que os itens da lista quebrem para a próxima linha em telas menores */
+  justify-content: center; /* Alinha os itens ao centro horizontalmente */
+  padding-bottom: 120px;
 }
 
-.opcoes-conteudo div {
+.opcoes-bg ul li {
   background-color: var(--cor-p8);
   padding: 20px;
+  padding-right: 5%;
   display: flex;
   flex-direction: column;
   align-items: start;
+  border-radius: 5px;
 }
 
-.opcoes-conteudo div p {
+.opcoes-bg ul li p {
   padding-top: 12px;
   padding-bottom: 40px;
 }
 
-.opcoes-conteudo div p::before {
+.opcoes-bg ul li p::before {
   content: "";
   display: inline-block;
   height: 8px;
@@ -54,51 +65,28 @@
   background: linear-gradient(#00ff29, #07bc16);
 }
 
-.opcoes-conteudo div a {
+.opcoes-bg ul li a {
   margin-top: 60px;
   margin-bottom: 40px;
 }
 
-/* .opcoes-conteudo {
-  margin-top: 90px;
-  display: flex;
-  justify-content: center;
-  gap: 0;
-  max-width: 1800px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 120px;
+@media (max-width: 1200px) {
+  .opcoes-bg ul li a {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .opcoes-bg ul li p {
+    padding-top: 10px;
+  }
 }
 
-.opcoes-conteudo div {
-  margin: 0 40px; 
-  flex: 0 1 calc(33.33% - 80px); 
-  background-color: var(--cor-p8);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  text-align: center;
+@media (max-width: 600px) {
+  .opcoes-bg ul li a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .opcoes-bg ul li p {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
 }
-
-.opcoes-conteudo div h4 {
-  margin-bottom: 12px;
-}
-
-.opcoes-conteudo div p {
-  padding-top: 12px;
-  padding-bottom: 20px;
-}
-
-.opcoes-conteudo div p::before {
-  content: "";
-  display: inline-block;
-  height: 8px;
-  width: 12px;
-  margin-right: 6px;
-  background: linear-gradient(#00ff29, #07bc16);
-}
-
-.opcoes-conteudo div a {
-  margin-top: auto;
-} */
