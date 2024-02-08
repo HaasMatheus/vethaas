@@ -1,0 +1,72 @@
+.vantagens-bg {
+  background-color: var(--cor-p8);
+  text-align: center;
+}
+
+.vantagens-bg .vantagens {
+  margin-top: 90px;
+  display: flex;
+  gap: 40px; /* Reduzi o gap para melhorar em layouts menores */
+  padding: 0;
+  width: 100%; /* Substituí max-width por width */
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap; /* Permite que os itens da lista quebrem para a próxima linha em telas menores */
+  justify-content: center; /* Alinha os itens ao centro horizontalmente */
+  padding-bottom: 120px;
+  text-align: left;
+}
+
+.vantagens-bg h3 {
+  display: inline-block;
+  margin: 0; /* Remover margens padrão dos elementos */
+  padding-top: 120px;
+  padding-bottom: 20px;
+  justify-items: center; /* Alinha os itens ao centro horizontalmente */
+}
+
+.vantagens div {
+  background-color: var(--cor-0);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.vantagens div h4 {
+  margin-bottom: 20px;
+}
+
+.vantagens div span {
+  grid-column: 2;
+  display: block;
+  text-align: right;
+  margin-left: 40px;
+}
+.vantagens div ul {
+  grid-column: 1/-1;
+  margin-bottom: 32px;
+}
+
+.vantagens div li + li {
+  margin-top: 20px;
+}
+
+.vantagens div li::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  background-image: url("../../img/icones/lista.svg");
+  margin-right: 8px;
+}
+
+.vantagens div a {
+  grid-column: 1/-1;
+  height: min-content;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 600px) {
+}

@@ -20,6 +20,7 @@
   font-weight: 600;
   line-height: 1.5rem;
   margin-top: 12px;
+  max-width: max-content;
 }
 
 .botao img {
