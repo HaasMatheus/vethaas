@@ -2,7 +2,6 @@
   background-color: var(--cor-p8);
   text-align: center;
 }
-
 .vantagens-bg .vantagens {
   margin-top: 90px;
   display: flex;
@@ -17,6 +16,10 @@
   text-align: left;
 }
 
+.vantagens-bg .vantagens div:nth-child(3) {
+  background-color: var(--cor-p7);
+}
+
 .vantagens-bg h3 {
   display: inline-block;
   margin: 0; /* Remover margens padrão dos elementos */
@@ -26,6 +29,7 @@
 }
 
 .vantagens div {
+  position: relative;
   background-color: var(--cor-0);
   padding: 20px;
   display: grid;
@@ -33,7 +37,8 @@
 }
 
 .vantagens div h4 {
-  margin-bottom: 20px;
+  margin-bottom: 32px;
+  height: min-content;
 }
 
 .vantagens div span {
@@ -51,13 +56,16 @@
   margin-top: 20px;
 }
 
-.vantagens div li::before {
+.vantagens li::before {
   content: "";
   display: inline-block;
   width: 13px;
   height: 9px;
-  background-image: url("../../img/icones/lista.svg");
   margin-right: 8px;
+}
+
+.vantagens .li-icone::before {
+  background-image: url("../../img/icones/lista.svg");
 }
 
 .vantagens div a {
@@ -69,4 +77,16 @@
 }
 
 @media (max-width: 600px) {
+  .vantagens li::before {
+    display: none;
+  }
+
+  .vantagens .li-icone::before {
+    background-image: url("../../img/icones/lista.svg");
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 9px;
+    margin-right: 8px;
+  }
 }
