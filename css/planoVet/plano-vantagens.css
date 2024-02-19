@@ -75,10 +75,20 @@
   height: min-content;
 }
 
-@media (max-width: 1200px) {
-}
+@media (max-width: 800px) {
+  .vantagens div:nth-child(1) li::before {
+    display: none;
+  }
+  .vantagens div:nth-child(1) .li-icone::before {
+    background-image: url("../../img/icones/lista.svg");
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 9px;
+    margin-right: 8px;
+  }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   .vantagens li::before {
     display: none;
   }
