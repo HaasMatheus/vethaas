@@ -102,3 +102,12 @@
     margin-right: 8px;
   }
 }
+
+@media (max-width:600px ) {
+  .vantagens-bg h3 {
+    padding-top: 60px;
+  }
+  .vantagens-bg .vantagens {
+    margin-top: 2px;
+    padding-bottom: 60px;
+}

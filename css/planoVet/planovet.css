@@ -72,9 +72,6 @@
     text-align: center;
     padding: 20px;
   }
-
-  .planoVet-conteudo .vetHaasSVG {
-  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -92,5 +89,14 @@
   .planoVet p {
     font-size: 0.9rem;
     margin-bottom: 10px;
+  }
+  .planoVet-conteudo h4 {
+    text-align: start;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .planoVet {
+    margin-bottom: 20px;
   }
 }

@@ -77,4 +77,11 @@
     padding: 8px 12px;
     border-radius: 4px;
   }
+  .header-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .header {
+    padding: 10px 10px 10px 80px;
+  }
 }
